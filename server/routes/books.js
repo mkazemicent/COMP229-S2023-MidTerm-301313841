@@ -1,3 +1,4 @@
+//Mohammad Kazemi 301313841 23/06/2023
 // modules required for routing
 let express = require('express');
 let router = express.Router();
@@ -38,7 +39,9 @@ router.post('/add', (req, res, next) => {
       "Description": req.body.description,
       "Price": req.body.price,
       "Author": req.body.author,
-      "Genre": req.body.genre
+      "Genre": req.body.genre,
+      "Favourite": req.body.favourite ? true : false
+
   });
 
   book.create(newBook, (err, book) => {
@@ -77,7 +80,9 @@ router.post('/:id', (req, res, next) => {
       "Description": req.body.description,
       "Price": req.body.price,
       "Author": req.body.author,
-      "Genre": req.body.genre
+      "Genre": req.body.genre,
+      "Favourite": req.body.favourite ? true : false
+
   });
 
   book.updateOne({_id: id}, updatedBook, (err) => {
@@ -100,6 +105,30 @@ router.get('/delete/:id', (req, res, next) => {
           res.end(err);
       } else {
           res.redirect('/books');
+      }
+  });
+});
+
+// POST - process the favourite by user id
+router.post('/favourite/:id', (req, res, next) => {
+  let id = req.params.id;
+
+  book.findById(id, (err, bookToFavorite) => {
+      if(err) {
+          console.log(err);
+          res.status(500).send(err.message);
+
+          res.end(err);
+      } else {
+          bookToFavorite.Favourite = !bookToFavorite.Favourite;
+          bookToFavorite.save(err => {
+            if (err) {
+              console.log(err);
+              res.end(err);
+            } else {
+              res.redirect('/books');
+            }
+          });
       }
   });
 });

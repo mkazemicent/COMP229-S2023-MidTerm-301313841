@@ -1,5 +1,5 @@
 {
-  "name": "comp229-s2023-midterm",
+  "name": "comp229-s2023-midterm-moh",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -53,7 +53,7 @@
     "ExpressJS",
     "EJS"
   ],
-  "author": "Your Name Goes Here",
+  "author": "Mohammad Kazemi",
   "license": "ISC",
   "bugs": {
     "url": ""

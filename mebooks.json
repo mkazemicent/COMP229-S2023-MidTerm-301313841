@@ -1,0 +1,34 @@
+[
+    {
+        "Title": "The Way of Kings",
+        "Description": "Introduces the world of Roshar through the experiences of a war-weary royal compelled by visions, a highborn youth condemned to military slavery and a woman who would save her impoverished house.",
+        "Price": 11.99,
+        "Author": "Brandon Sanderson",
+        "Genre": "Fantasy",
+        "Favourite": true
+    },
+    {
+        "Title": "Good Omens",
+        "Description": "The world will end on Saturday. Next Saturday. Just before dinner, according to The Nice and Accurate Prophecies of Agnes Nutter, Witch, the world's only completely accurate book of prophecies written in 1655. The armies of Good and Evil are amassing and everything appears to be going according to Divine Plan. Except that a somewhat fussy angel and a fast-living demon are not actually looking forward to the coming Rapture. And someone seems to have misplaced the Antichrist.",
+        "Price": 7.89,
+        "Author": "Terry Pratchett and Neil Gaiman",
+        "Genre": "Fantasy",
+        "Favourite": true
+    },
+    {
+        "Title": "Going Postal",
+        "Description": "Arch-swindler Moist Van Lipwig never believed his confidence crimes were hanging offenses -- until he found himself with a noose tightly around his neck, dropping through a trapdoor, and falling into...a government job?",
+        "Price": 8.45,
+        "Author": "Terry Pratchett",
+        "Genre": "Fantasy",
+        "Favourite": true
+    },
+    {
+        "Title": "Slaughterhouse-Five",
+        "Description": "Slaughterhouse-Five, an American classic, is one of the world’s great antiwar books. Centering on the infamous World War II firebombing of Dresden, the novel is the result of what Kurt Vonnegut described as a twenty-three-year struggle to write a book about what he had witnessed as an American prisoner of war.",
+        "Price": 8.99,
+        "Author": "Kurt Vonnegut",
+        "Genre": "Science Fiction",
+        "Favourite": true
+    }
+]
